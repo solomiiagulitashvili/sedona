@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="main-nav">
+        <img class="logo" src="img/logo.jpg" />
+        <ul class="menu">
+          <li>ИНФОРМАЦИЯ</li>
+          <li>ФОТО И ВИДЕО</li>
+          <li>КАРТА ШТАТА</li>
+          <li>ГОСТИНИЦЫ</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="filters">
+      <form class="infrastructure-filter" method="get" action="#">
+        <legend>ИНФРАСТРУКТУРА:</legend>
+        <ul class="infrastructure-list">
+          <li>
+            <input type="checkbox" name="pool" id="pool-filter" checked />
+            <label for="pool-filter">БАССЕЙН</label>
+          </li>
+          <li>
+            <input type="checkbox" name="parking" id="parking-filter" />
+            <label for="parking-filter">ПАРКОВКА</label>
+          </li>
+          <li>
+            <input type="checkbox" name="wi-fi" id="wi-fi-filter" />
+            <label for="wi-fi-filter">Wi-Fi</label>
+          </li>
+        </ul>
+      </form>
+      <form class='apartments-filter' method='get' action='#'>
+          <legend>Тип жилья:</legend>
+          <ul class='apartments-list'>
+              <li>
+                  <input type='checkbox' name='hotel' id='hotel-filter' checked>
+                  <label for='hotel-filter'>Гостиница</label>
+              </li>
+              <li>
+                  <input type='checkbox' name='motel' id='motel-filter' checked>
+                  <label for='motel-filter'>МОТЕЛЬ</label>
+              </li>
+              <li>
+                  <input type='checkbox' name='apats' id='aparts-filter' checked>
+                  <label for='aparts-filter'>АПАРТАМЕНТЫ</label>
+              </li>
+          </ul>
+      </form>
+      <div class='price-filter'>
+          <p>Стоимость в сутки (Р):</p>
+          <span>от 0</span>
+          <span>ДО 3000</span>
+          <div class='price-string'>
+              <div class='price-round-1'></div>
+              <div class='price-round-2'></div>
+          </div>
+          <button class='price-filter-btn'>ПОКАЗАТЬ</button>
+      </div>
+    </section>
+    <section class='sort'>
+        <p>Найдено: 3</p>
+        <p class='filter-header'>СОРТИРОВКА:</p>
+        <ul class='sort-by'>
+            <li><a href='#'>ПО ЦЕНЕ</a></li>
+            <li><a href='#'>ПО ТИПУ</a></li>
+            <li><a href='#'>ПО РЕЙТИНГУ</a></li>
+        </ul>
+        <button class='to-up'><img src='img/icon-up-dir.svg'></button>
+        <button class='to-down'><img src='img/icon-down-dir.svg'></button>
+    </section>
+    <section class='results'>
+        <ul class='results-list'>
+            <li>
+                <img src='img/amara.jpg'>
+                <div class='amara-wrapper'>
+                    <h3>Amara Resort & Spa</h3>
+                    <p>Гостиница</p>
+                    <span>ОТ 4000 Р.</span>
+                    <button class='details'>ПОДРОБНЕЕ</button>
+                    <button class='to-book'>ЗАБРОНИРОВАТЬ</button>
+                </div>
+                <div class='rating-wrapper'>
+                    <img class='star' src='img/star.svg'>
+                    <img class='star' src='img/star.svg'>
+                    <img class='star' src='img/star.svg'>
+                    <img class='star' src='img/star.svg'>
+                    <p>Рейтинг: 8,5</p>
+                </div>
+            </li>
+            <li>
+                <img src='img/desert.jpg'>
+                <div class='desert-wrapper'>
+                    <h3>Desert Quail Inn</h3>
+                    <p>Мотель</p>
+                    <span>ОТ 3000 Р.</span>
+                    <button class='details'>ПОДРОБНЕЕ</button>
+                    <button class='to-book'>ЗАБРОНИРОВАТЬ</button>
+                </div>
+                <div class='rating-wrapper'>
+                        <img class='star' src='img/star.svg'>
+                        <img class='star' src='img/star.svg'>
+                        <img class='star' src='img/star.svg'>
+                        <p>Рейтинг: 8,9</p>
+                    </div>
+            </li>
+            <li>
+                <img src='img/villas.jpg'>
+                <div class='villa-wrapper'>
+                    <h3>Villas at Poco Diablo</h3>
+                    <p>Апартаменты</p>
+                    <span>ОТ 2000 Р.</span>
+                    <button class='details'>ПОДРОБНЕЕ</button>
+                    <button class='to-book'>ЗАБРОНИРОВАТЬ</button>
+                </div>
+                <div class='rating-wrapper'>
+                        <img class='star' src='img/star.svg'>
+                        <img class='star' src='img/star.svg'>
+                        <p>Рейтинг: 9,2</p>
+                    </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+      <div class="hash-tag">
+        <a href="#">#visitSEDONA</a>
+      </div>
+      <div class="contacts">
+        <ul class="contacts-list">
+          <li class="twitter">
+            <a href="#"><img src="img/twitter.svg"/></a>
+          </li>
+          <li class="facebook">
+            <a href="#"><img src="img/facebook.svg"/></a>
+          </li>
+          <li class="youtube">
+            <a href="#"><img src="img/youtube.svg"/></a>
+          </li>
+        </ul>
+      </div>
+      <div class="written-by">
+        <p>WEBSITE by</p>
+        <img class="html-academy-logo" src="img/logo-htmlacademy.svg" />
+      </div>
+    </footer>
+
+    <script id="__bs_script__">
+      //<![CDATA[
+      document.write(
+        "<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace(
+          'HOST',
+          location.hostname
+        )
+      );
+      //]]>
+    </script>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>

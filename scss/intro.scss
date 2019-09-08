@@ -1,0 +1,87 @@
+.intro {
+  width: 100%;
+  background-image: url('../img/intro-bcg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 18%;
+  height: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  @media (min-width: 768px) {
+    height: 340px;
+  }
+
+  .white {
+    width: 100%;
+    position: absolute;
+    height: auto;
+    bottom: -3px;
+  }
+  .welcome {
+    width: 100px;
+    height: auto;
+    margin-top: 37px;
+    margin-bottom: 5px;
+    @media (min-width: 768px) {
+      width: 135px;
+      margin-top: 96px;
+    }
+  }
+  .georgeus {
+    width: 90px;
+    height: auto;
+    @media (min-width: 768px) {
+      width: 125px;
+    }
+  }
+
+  .georgeus-wrapper {
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 15px;
+      height: 1px;
+      position: absolute;
+      background-color: #766357;
+      top: 6px;
+      left: -20px;
+      @media (min-width: 768px) {
+        top: 9px;
+      }
+    }
+
+    &::after {
+      content: '';
+      width: 15px;
+      height: 1px;
+      position: absolute;
+      background-color: #766357;
+      top: 6px;
+      left: 95px;
+      @media (min-width: 768px) {
+        left: 130px;
+        top: 9px;
+      }
+    }
+  }
+  .sedona {
+    width: 230px;
+    height: auto;
+    margin-top: 25px;
+    @media (min-width: 768px) {
+      width: 280px;
+    }
+  }
+  .canyon {
+    width: 160px;
+    height: auto;
+    margin-top: 25px;
+    @media (min-width: 768px) {
+      width: 190px;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.hotels {
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    margin: 30px 0 20px;
+    @media (min-width: 768px) {
+      margin: 50px 0 40px;
+    }
+  }
+
+  p {
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .button {
+    margin: 0 auto;
+    position: relative;
+    width: 70%;
+    height: 42px;
+    background-color: #766357;
+    border: none;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      height: 62px;
+      width: 50%;
+    }
+    @media (min-width: 768px) {
+      height: 62px;
+      width: 50%;
+    }
+
+    .pop-up {
+      width: 100%;
+      position: absolute;
+      background-color: #fff;
+      padding: 20px;
+      top: 100%;
+      left: 0;
+      box-sizing: border-box;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      flex-wrap: nowrap;
+
+      &.visually-hidden {
+        display: none;
+      }
+      &.pop-up-show {
+        display: flex;
+      }
+
+      input {
+        margin-left: 10px;
+        border: none;
+        background-color: #f2f2f2;
+        background-image: url('../img/calendar.png');
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 50%;
+        width: 60%;
+        height: 20px;
+        @media (min-width: 768px) {
+          height: 25px;
+          width: 58%;
+        }
+        @media (min-width: 1024px) {
+          height: 30px;
+          width: 52%;
+        }
+      }
+
+      .pop-up-btn {
+        padding: 0;
+        height: 25px;
+        width: 95%;
+        margin-left: 5px;
+        border: none;
+        background-color: #81b3d2;
+        @media (min-width: 768px) {
+          height: 40px;
+        }
+        @media (min-width: 1024px) {
+          height: 50px;
+        }
+      }
+
+      .wrapper-counter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        align-items: baseline;
+
+        .wrapper-adults,
+        .wrapper-kids {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+        }
+
+        h4 {
+          margin: 0 1px 0 3px;
+          padding: 0;
+        }
+
+        p {
+          margin: 10px 0;
+          padding: 0;
+          width: 20px;
+          height: 20px;
+          background-color: #f2f2f2;
+        }
+
+        .less,
+        .more {
+          width: 20px;
+          height: 20px;
+          background-color: #f2f2f2;
+          border: none;
+          margin: 10px 0 16px 0;
+        }
+      }
+    }
+  }
+}

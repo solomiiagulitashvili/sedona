@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class='wrapper'>
+        <header>
+            <nav class='main-nav'>
+            <img class='logo' src='img/logo.png'>
+                <ul class='menu'>
+                    <div class='menu-wrapper-1'>
+                        <li>ИНФОРМАЦИЯ</li>
+                        <li>ФОТО И ВИДЕО</li>
+                    </div>
+                    <div class='menu-wrapper-2'>
+                        <li>КАРТА ШТАТА</li>
+                        <li>ГОСТИНИЦЫ</li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <section class='intro'>
+            <img class='welcome' src='img/welcome.png'>
+            <div class='georgeus-wrapper'>
+                <img class='georgeus' src='img/gorgeous.png'>
+            </div>
+            <img class='sedona' src='img/sedona.png'>
+            <img class='canyon' src='img/canyon-sucks.png'>
+            <img class='white' src='img/intro-white.png'>
+        </section>
+    <section class='advantages'>
+        <h2 class='advantages-header'>СЕДОНА — небольшой городок в АРИЗОНЕ, 
+            <br>
+                зАСЛУЖИвающий большего!
+            </h2>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <ul class='advantages-list'>
+                <li class='city'>
+                    <div class='city-wrapper'>
+                        <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
+                        <span>— №1 —</span>
+                        <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                    </div>
+                    <di class='city-img'></di>
+                </li>
+                <li class='list-1'>
+                    <ul class='properties'>
+                        <li class='apartments'>
+                            <img class='apartments-img' src='img/apartments.svg'>
+                            <h3>Жилье</h3>
+                            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                        </li>
+                        <li class='food'>
+                            <img class='food-img' src='img/food.svg'>
+                            <h3>ЕДА</h3>
+                            <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,
+                                <br>
+                            Вы НЕ разочаруетесь!
+                            </p>
+                        </li>
+                        <li class='souvenirs'>
+                            <img class='souvenirs-img' src='img/souvenirs.svg'>
+                            <h3>СУВЕНИРЫ</h3>
+                            <p>Не только китайского, но и местного производства!</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class='bridge'>
+                    <div class='bridge-img'></div>
+                    <div class='bridge-wrapper'>
+                        <h3>ТАМ ЕСТЬ
+                            <br> 
+                            Мост дьявола
+                        </h3>
+                        <span>— №2 —</span>
+                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    </div>
+                </li>
+                <li class='list-2'>
+                    <ul class='items-no-photo'>
+                        <li class='square'>
+                            <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+                            <span>— №3 —</span>
+                            <p> Все досто-примечательности находятся очень близко</p>
+                        </li>
+                        <li class='road'>
+                            <h3>КРАСИВАЯ ДОРОГА</h3>
+                            <span>— №4 —</span>
+                            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+                        </li>
+                        <li class='tourists'>
+                            <h3>МАЛО 
+                                <br>
+                                ТУРИСТОВ
+                            </h3>
+                            <span>— №5 —</span>
+                            <p>Большинство едет в гранд каньон и толпится там</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+    </section>
+    <section class='hotels'>
+        <h2 class='hotels-header'>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p> Укажите предполагаемые даты поездки,
+            <br>
+                и мы покажем вам лучшие предложения гостиниц в седоне
+            </p>
+        <div class='button hotels-search-btn'>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
+                <div class='pop-up visually-hidden'>
+                        <label for='calendar'>Дата заезда:
+                            <input type='date' name='calendar'>
+                        </label>
+                        <label for='calendar'>Дата Выезда:
+                            <input type='date' name='calendar'>
+                        </label>
+                        <div class='wrapper-counter'>
+                            
+                            <h4>Взрослые:</h4>
+                            <div class='wrapper-adults'>
+                                <button class='less'>-</button>
+                                <p id='adults'>0</p>
+                                <button class='more'>+</button>
+                            </div>
+                            <h4>Дети:</h4>
+                            <div class='wrapper-kids'>
+                                <button class='less'>-</button>
+                                <p id='kids'>0</p>
+                                <button class='more'>+</button>
+                            </div>
+                        </div>       
+                        <button type='submit' class='pop-up-btn'>НАЙТИ</button>
+                </div>
+        </div>
+        
+    </section>
+    <section class='map' id='map'></section>
+    <footer>
+            <div class='hash-tag'>
+                <a href='#'>#visitSEDONA</a>
+            </div>
+            <div class='contacts'>
+                <ul class='contacts-list'>
+                    <li class='twitter'><a href='#'><img src='img/twitter.png'></a></li>
+                    <li class='facebook'><a href='#'><img src='img/facebook.png'></a></li>
+                    <li class='youtube'><a href='#'><img src='img/youtube.png'></a></li>
+                </ul>
+            </div>
+            <div class='written-by'>
+                <p>WEBSITE by</p>
+                <img class='html-academy-logo' src='img/logo-htmlacademy.svg'>
+            </div>
+    </footer>
+</div>
+
+<script src='scripts/scripts.js'></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9-Mq4ZGObaGtD7sgt_UrK8IGrdl6AlTM&callback=initMap"
+async defer></script>
+
+    <script id="__bs_script__">//<![CDATA[
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
+    //]]></script>
+</body>
+
+</html>
